@@ -15,6 +15,11 @@ setup(
         packages=find_packages(),
         license="GPL-3.0 license",
         install_requires=[],
+        entry_points={
+        'console_scripts': [
+            'phydget = phydget:main_function'
+        ],
+        },
         keywords=['python', 'tools', 'internal', 'phylodynamics'],
         classifiers= [
             "Development Status :: 3 - Alpha",
